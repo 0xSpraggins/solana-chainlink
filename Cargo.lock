@@ -396,6 +396,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "chainlink_solana"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "44e1a6c94acdef947c091751143a1271c433fe140ed045888c0a1248330b1647"
+dependencies = [
+ "borsh",
+ "borsh-derive",
+ "solana-program",
+]
+
+[[package]]
 name = "console_error_panic_hook"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1015,6 +1026,7 @@ name = "solana-chainlink"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
+ "chainlink_solana",
 ]
 
 [[package]]
